@@ -21,7 +21,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
   [_COLEMAK] = LAYOUT_split_3x5_3(
 //	  		-------------------------------------------------			-------------------------------------------------
-        	QC_Q,     KC_W,     KC_F,     KC_P,     KC_B,               KC_J,     KC_L,     KC_U,     KC_Y,    KC_QUOT,
+        	TD(QC_Q), KC_W,     KC_F,     KC_P,     KC_B,               KC_J,     KC_L,     KC_U,     KC_Y,    KC_QUOT,
 //	  		-------------------------------------------------			-------------------------------------------------
             KC_A,     KC_R,     KC_S,     KC_T,     KC_G,               KC_M,     KC_N,     KC_E,     KC_I,    KC_O,
 //	  		-------------------------------------------------			-------------------------------------------------
@@ -57,13 +57,13 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
   [_MEDIA] = LAYOUT_split_3x5_3(
   //,-----------------------------------------------------.                    ,-----------------------------------------------------.
-      KC_SLEP,   KC_F1,   KC_F2,   KC_F3,   KC_F4,                      KC_VOLU, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
+      KC_F1,   KC_F2,   KC_F3,   KC_F4,  KC_SLEP,                        KC_VOLU, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-      XXXXXXX,   KC_F5,   KC_F6,   KC_F7,   KC_F8,                      KC_VOLD, KC_MPRV, KC_MPLY, KC_MNXT, KC_MSTP,
+      KC_F5,   KC_F6,   KC_F7,   KC_F8,  XXXXXXX,                     KC_VOLD, KC_MPRV, KC_MPLY, KC_MNXT, KC_MSTP,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-      XXXXXXX,   KC_F9,   KC_F10,  KC_F11,  KC_F12,                     KC_MUTE, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
+      KC_F9,   KC_F10,  KC_F11,  KC_F12, XXXXXXX,                     KC_MUTE, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
   //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
-                                          KC_LGUI,  KC_SPC, _______,     _______, KC_ENT, KC_RALT
+                                          KC_LGUI,  KC_SPC, _______,     KC_ENT, KC_SPC, _______
                                       //`--------------------------'  `--------------------------'
   )
 };
