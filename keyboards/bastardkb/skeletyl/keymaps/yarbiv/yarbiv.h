@@ -7,7 +7,7 @@ enum layer_names {
     _MEDIA,
 };
 
-#define QC_SPC LT(_NUMVIGATION, KC_BSPC)
+#define QC_SPC LT(_NUMVIGATION, KC_SPC)
 #define QC_TAB LT(_MEDIA, KC_TAB)
 #define QC_ENT LT(_SYM, KC_ENT)
 #define QC_Z MT(MOD_LGUI, KC_Z)
