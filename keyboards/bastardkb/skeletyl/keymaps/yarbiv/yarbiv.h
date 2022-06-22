@@ -1,12 +1,46 @@
+#pragma once
+
 #include QMK_KEYBOARD_H
+#include "features/caps_word.h"
+#include "features/custom_shift_keys.h"
+#include "features/os_mode.h"
 
 enum custom_keycodes {
     QC_PRNT = SAFE_RANGE,
+    PHONE,
+    EMAIL,
+    CLOSE,
+    TASKMAN,
+    KC_UDIR,
+    QC_CPY,
+    QC_PAS,
+    QC_CUT,
+    QC_SAVE,
+    QC_LWRD,
+    QC_RWRD,
+    QC_UNDO,
+    QC_REDO,
 };
 
 enum tapdance_declarations {
     QC_Q,
+    OSFT,
 };
+
+typedef enum {
+    TD_NONE,
+    TD_UNKNOWN,
+    TD_SINGLE_TAP,
+    TD_SINGLE_HOLD,
+    TD_DOUBLE_TAP,
+    TD_DOUBLE_HOLD,
+	TD_TRIPLE_TAP,
+} td_state_t;
+
+typedef struct {
+    bool is_press_action;
+    td_state_t state;
+} td_tap_t;
 
 enum layer_names {
     _COLEMAK,
