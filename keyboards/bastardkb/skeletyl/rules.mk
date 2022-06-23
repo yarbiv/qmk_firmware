@@ -28,3 +28,8 @@ RGBLIGHT_SUPPORTED = no
 LAYOUTS = split_3x5_3
 
 TAP_DANCE_ENABLE = yes
+
+SRC += ./yarbiv.c \
+	   ./features/caps_word.c \
+	   ./features/custom_shift_keys.c \
+	   ./features/os_mode.c
