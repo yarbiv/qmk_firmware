@@ -1,9 +1,9 @@
 #pragma once
 
 #include QMK_KEYBOARD_H
-// #include "features/caps_word.h"
-// #include "features/custom_shift_keys.h"
-// #include "features/os_mode.h"
+#include "features/caps_word.h"
+#include "features/custom_shift_keys.h"
+#include "features/os_mode.h"
 
 // TODO: OS swapping
 enum custom_keycodes {
@@ -66,7 +66,6 @@ void sft_finished(qk_tap_dance_state_t *state, void *user_data);
 void sft_reset(qk_tap_dance_state_t *state, void *user_data);
 
 // TODO: Ideally this becomes an OS sensitive toggler?
-
 #define QC_PRNT LGUI(LSFT(KC_S))
 #define CLOSE LALT(KC_F4)
 #define TASKMAN RCS(KC_ESC)
@@ -77,4 +76,4 @@ void sft_reset(qk_tap_dance_state_t *state, void *user_data);
 #define QC_LWRD LCTL(KC_LEFT)
 #define QC_RWRD LCTL(KC_RIGHT)
 #define QC_UNDO LCTL(KC_Z)
-#define QC_REDO LCTL(KC_Z)
+#define QC_REDO RCS(KC_Z)
