@@ -27,7 +27,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 //	  		-------------------------------------------------			-------------------------------------------------
             QC_Z,     QC_X,     QC_C,     KC_D,     KC_V,               KC_K,     KC_H,     QC_COMM,  QC_DOT,  QC_SLSH,
 //	  		-------------------------------------------------			-------------------------------------------------
-            					TD(OSFT), KC_BSPC,  KC_LGUI,            QC_ENT,   QC_SPC, QC_TAB  
+            					TD(OSFT), KC_BSPC,  TD(SWAP),            QC_ENT,   QC_SPC, QC_TAB  
 //	  							-----------------------------			-----------------------------
   ),
 
@@ -37,7 +37,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
       QC_LWRD, KC_LEFT, KC_DOWN, KC_RIGHT,QC_RWRD,                      KC_0,    KC_4,    KC_5,    KC_6,   KC_DOT,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-      KC_LGUI, KC_LALT, KC_LCTL, QC_SAVE, QC_REDO,                      KC_MINS, KC_1,    KC_2,    KC_3,   KC_PLUS,
+      QC_MOD3, QC_MOD2, QC_MOD1, QC_SAVE, QC_REDO,                      KC_MINS, KC_1,    KC_2,    KC_3,   KC_PLUS,
   //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
                                           KC_LGUI, KC_SPC,  _______,     MO(3), KC_ENT, KC_RALT
                                       //`--------------------------'  `--------------------------'
@@ -57,11 +57,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
   [_MEDIA] = LAYOUT_split_3x5_3(
   //,-----------------------------------------------------.                    ,-----------------------------------------------------.
-      KC_F1,   KC_F2,   KC_F3,   KC_F4,  KC_SLEP,                        KC_VOLU, EMAIL,   PHONE,   CLOSE,   TASKMAN,
+      KC_F1,   KC_F2,   KC_F3,   KC_F4,  QC_LOCK,                        KC_VOLU, EMAIL,   PHONE,   CLOSE,   TASKMAN,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-      KC_F5,   KC_F6,   KC_F7,   KC_F8,  XXXXXXX,                        KC_VOLD, KC_MPRV, KC_MPLY, KC_MNXT, KC_MSTP,
+      KC_F5,   KC_F6,   KC_F7,   KC_F8,  QC_OS,                        KC_VOLD, KC_MPRV, KC_MPLY, KC_MNXT, KC_MSTP,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-      KC_F9,   KC_F10,  KC_F11,  KC_F12, XXXXXXX,                        KC_MUTE, QC_PRNT, KC_RCTL, KC_RALT, KC_RGUI,
+      KC_F9,   KC_F10,  KC_F11,  KC_F12, QC_POS,                        KC_MUTE, QC_PRNT, QC_MOD1, QC_MOD2, QC_MOD3,
   //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
                                           KC_LGUI,  KC_SPC, _______,     KC_ENT, KC_SPC, _______
                                       //`--------------------------'  `--------------------------'
