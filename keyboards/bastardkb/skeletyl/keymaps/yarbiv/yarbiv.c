@@ -52,6 +52,13 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record)
 			}
 			break;
 
+		case KC_GOEQ:
+			if 	(record->event.pressed)
+			{
+				SEND_STRING(":=");
+			}
+			break;
+
 		case PHONE:
 			if (record->event.pressed)
 			{

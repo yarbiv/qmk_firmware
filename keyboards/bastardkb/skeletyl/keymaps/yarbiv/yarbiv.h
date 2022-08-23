@@ -9,6 +9,7 @@ enum custom_keycodes {
     PHONE = SAFE_RANGE,
     EMAIL,
     KC_UDIR,
+    KC_GOEQ,
     QC_PRNT,
     CLOSE,
     TASKMAN,
