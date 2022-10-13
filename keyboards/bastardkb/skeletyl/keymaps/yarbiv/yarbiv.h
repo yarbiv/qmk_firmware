@@ -26,7 +26,7 @@ enum custom_keycodes {
 	QC_MOD3,
     QC_LOCK,
     QC_OS,
-    QC_POS,
+    QC_POS
 };
 
 enum tapdance_declarations {
@@ -52,6 +52,7 @@ typedef struct {
 
 enum layer_names {
     _COLEMAK,
+    _GAME,
     _NUMVIGATION,
     _SYM,
     _MEDIA,
@@ -66,6 +67,9 @@ enum layer_names {
 #define QC_SLSH MT(MOD_RGUI, KC_SLSH)
 #define QC_DOT MT(MOD_RALT, KC_DOT)
 #define QC_COMM MT(MOD_RCTL, KC_COMM)
+#define QC_DISC LSFT(KC_GRV)
+#define QC_STM LSFT(KC_TAB)
+#define QC_XBOX LGUI(KC_G)
 
 td_state_t cur_dance(qk_tap_dance_state_t *state);
 void sft_finished(qk_tap_dance_state_t *state, void *user_data);
